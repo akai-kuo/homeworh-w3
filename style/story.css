@@ -1,55 +1,5 @@
-/* 標籤基本樣式 */
-
-a{
-	color: var(--primary-400);
-	text-underline-offset: 4px;
-	display: block;
-}
-
-/* 通用樣式 */
-
-.container{
-	width: 856px;
-	margin: 0 auto;
-}
-
-.text-sm{
-	font-size: 14px;
-	font-weight: 400;
-}
-
-.text-neutral-600{
-	color: var(--neutral-600);
-}
-
-.text-primary-400{
-	color: var(--primary-400);
-}
-
-.bg-primary-100{
-	background-color: var(--primary-100);
-}
-
-.bg-neutral-100{
-	background-color: var(--neutral-100);
-}
-
-.p-32{
-	padding: 32px;
-}
-
-.pb-48{
-	padding-bottom: 48px;
-}
-
-.pe-8{
-	padding-right: 8px;
-}
-
-/* page */
-
 .header{
-	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true);
+	background-image: url(/img/hero.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -61,15 +11,25 @@ a{
 	font-size: 28px;
 }
 
+@media(max-width:767px){
+	.header{
+		padding: 87px 0;
+		background-image: url(/img/hero-sm.png);	
+	}
+	.eng-title{
+		font-size: 20px;
+	}
+}
+
 .quote{
 	border-radius: 12px;
 	text-align: center;
 }
 
-.intro img{
-	width: 1076px;
-	margin-right: -110px;
-	margin-left: -110px;
+@media(max-width:767px){
+	.quote{
+		text-align: left;
+	}
 }
 
 .section-lined{
@@ -89,6 +49,12 @@ a{
 .concept-item{
 	padding-left: 12px;
 	border-left: 3px solid var(--neutral-300);
+}
+
+.story-link{
+	color: var(--primary-400);
+	text-underline-offset: 4px;
+	display: block;
 }
 
 .bi{
